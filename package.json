@@ -9,7 +9,7 @@
     "postinstall": "npm run build",
     "build": "webpack --config webpack/webpack.prod.config.js -p",
     "clean": "rm -rf build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start"
   },
   "author": "Michał Załęcki <michal@michalzalecki.com>",
   "license": "WTFPL",
@@ -24,7 +24,6 @@
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.7.2",
-    "node-uuid": "^1.4.7",
     "postcss": "^5.0.14",
     "postcss-browser-reporter": "^0.4.0",
     "postcss-cssnext": "^2.4.0",
@@ -37,10 +36,12 @@
     "react-dom": "^0.14.0",
     "react-hot-loader": "^1.2.8",
     "style-loader": "^0.13.0",
+    "uuid": "^2.0.1",
     "webpack": "^1.11.0"
   },
   "devDependencies": {
     "extend": "^3.0.0",
+    "inject-loader": "^2.0.1",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.19",
     "karma-chrome-launcher": "^0.2.2",
@@ -49,6 +50,8 @@
     "karma-notify-reporter": "^0.1.1",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.12.13",
     "webpack-dev-server": "^1.10.1"
   }
 }
